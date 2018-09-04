@@ -8,7 +8,6 @@
 # 2 get the value of the matrix
 # 3 set the value of the inverse of the matrix using the solve() function
 # 4 get the value of the inverse of the matrix
-
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     set <- function(y) {
@@ -23,9 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-
 ## cacheSolve, calcuates inverse of a matrix
-
 cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
     if(!is.null(inv)) {
