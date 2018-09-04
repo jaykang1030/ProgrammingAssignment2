@@ -37,9 +37,9 @@ cacheSolve <- function(x, ...) {
     x$setinverse(inv)
 }
 
-
-x = matrix(rnorm(9), ncol = 3, nrow = 3)
-m = makeCacheMatrix(x)
-m$get()
-cacheSolve(m)
-m$getinverse()
+## sample run
+x = matrix(rnorm(9), ncol = 3, nrow = 3) # randomly generate 3 by 3 matrix
+m = makeCacheMatrix(x) ## create "cached" matrix object
+m$get() ## print "cached" matrix object 
+cacheSolve(m)  ## calculates inverse of "cached' matrix object
+m$getinverse() ## print inverse result
